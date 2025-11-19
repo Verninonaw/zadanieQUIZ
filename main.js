@@ -57,11 +57,13 @@ function logiin() {
     }
 }
 
-abtn.addEventListener('click', () => {
+abtn.addEventListener('click', (event) => {
+    event.preventDefault()  
     logiin()
 })
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (event) => {
+    event.preventDefault()
     register()
 })
 
